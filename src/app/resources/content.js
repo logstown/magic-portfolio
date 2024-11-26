@@ -35,9 +35,19 @@ const social = [
     link: "https://www.linkedin.com/in/loganjoecks",
   },
   {
+    name: 'Stack Overflow',
+    icon: 'stackOverflow',
+    link: 'https://stackoverflow.com/users/1815150/logan'
+  },
+  {
     name: "X",
     icon: "x",
     link: "https://x.com/logstaa",
+  },
+  {
+    name: 'Reddit',
+    icon: 'reddit',
+    link: 'https://www.reddit.com/user/memestheword/'
   },
   {
     name: "Email",
@@ -79,8 +89,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Hello! I'm a Boston-based web developer with a passion for building original ideas using a variety of technologies.
-        Enterprise web-app developer by day, building websites I want to see in the world by night.
+        Hello! I'm a Boston-based web developer with a passion for building what I want to see in the world.
+        Enterprise web-app developer by day, personal project rockstar by night.
       </>
     ),
   },
@@ -91,12 +101,13 @@ const about = {
       {
         company: "Ryan LLC",
         timeframe: "2014 - Present",
-        role: "Senior Front-end Web Developer",
+        role: "Senior Front-end Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.
+            Develop UI of enterprise-level property tax SaaS
           </>,
-          <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>,
+          <>Initially hired as sole front-end developer. Scaffolded UI in AngularJS, then partially upgraded to Angular 2+ creating a hybrid.</>,
+          <>Contributed to home-grown UI framework (ACE)</>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -220,6 +231,11 @@ const about = {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
+    {
+        title: 'HTML/CSS/Typescript',
+        description: <>The basics</>,
+        images: []
+    },
       {
         title: "Angular/AngularJS",
         description: <>From enterprise applications to personal projects</>,
@@ -231,15 +247,15 @@ const about = {
         images: [],
       },
       {
+        title: 'D3.js',
+        description: <>Powerful visualization library</>,
+        images: []
+      },
+      {
         title: "Firebase",
         description: <>Realtime DB and Firestore</>,
         images: [],
       },
-      {
-        title: 'Typescript',
-        description: <>Can't code without it</>,
-        images: []
-      }
     ],
   },
 };
