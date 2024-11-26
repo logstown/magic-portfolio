@@ -3,6 +3,7 @@
 import { AvatarGroup, Flex, Heading, RevealFx, SmartImage, SmartLink, Text } from "@/once-ui/components";
 import { useEffect, useState } from "react";
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
 
 interface ProjectCardProps {
     href: string;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
     title: string;
     content: string;
     description: string;
+    link?: string;
     avatars: { src: string }[];
 }
 
@@ -19,6 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     title,
     content,
     description,
+    link,
     avatars
 }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -117,12 +120,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     <Flex
                         flex={7} direction="column"
                         gap="16">
-                        {avatars?.length > 0 && (
-                            <AvatarGroup
-                                avatars={avatars}
-                                size="m"
-                                reverseOrder/>
-                        )}
+                        {/* <Flex gap="16" alignItems="center"> */}
+                            {avatars?.length > 0 && (
+                                <AvatarGroup
+                                    avatars={avatars}
+                                    size="m"
+                                    reverseOrder/>
+                            )}
+                            {link && (
+                                <Link href={link} target="0">{link}</Link>
+                            )}
+                        {/* </Flex> */}
                         {description?.trim() && (
                             <Text
                                 wrap="balance"

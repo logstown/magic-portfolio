@@ -30,6 +30,7 @@ export function Projects({ range, locale }: ProjectsProps) {
                     images={post.metadata.images}
                     title={post.metadata.title}
                     description={post.metadata.summary}
+                    link={post.metadata.link}
                     content={post.content}
                     avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}/>
             ))}
