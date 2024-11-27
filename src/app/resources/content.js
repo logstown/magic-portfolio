@@ -63,8 +63,8 @@ const home = {
   headline: <>Web Developer</>,
   subline: (
     <>
-      I'm Logan, a senior web developer at <InlineCode>Ryan LLC</InlineCode>, where I write
-      <br /> front-end code. After hours, I build my own projects.
+      I'm Logan, a senior web developer at <InlineCode>Ryan LLC</InlineCode> where I primarily
+      <br /> write front-end code. After hours, I build my own projects.
     </>
   ),
 };
